@@ -25,8 +25,6 @@ def index():
 @app.route('/consulta')
 def consulta():
     query = db_query("SELECT * FROM [dbo].[Cadastro];")
-    for row in query:
-        print(row)
     return render_template('consulta.html', query=query)
 
 
