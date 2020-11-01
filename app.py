@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect
-from forms import CadastroForm
-from db import db_query, db_insert
+from .forms import CadastroForm
+from .db import db_query, db_insert
 from flask_wtf.csrf import CSRFProtect
 
 csrf = CSRFProtect()
