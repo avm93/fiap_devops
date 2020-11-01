@@ -1,6 +1,6 @@
-flask~=1.1.2
 gunicorn
+flask
 flask-wtf
-WTForms~=2.3.3
+WTForms
 email_validator
 pyodbc
