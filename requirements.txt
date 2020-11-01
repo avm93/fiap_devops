@@ -1,2 +1,6 @@
-flask
+flask~=1.1.2
 gunicorn
+flask-wtf
+WTForms~=2.3.3
+email_validator
+pyodbc

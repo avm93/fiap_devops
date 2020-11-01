@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>INDEX</h1>
+
+<div class="formwrapper">
+
+    <h2 class="title">Cadastro</h2>
+    <form method="POST" action="">
+        {{ form.csrf_token() }}
+        <div class="form-field">{{ form.nome.label }} {{ form.nome(size=150) }}</div>
+        <div class="form-field">{{ form.sobrenome.label }} {{ form.sobrenome(size=150) }}</div>
+        <div class="form-field">{{ form.email.label }} {{ form.email }}</div>
+        {{ form.submit }}
+    </form>
+</div>
+{% if form.errors %}
+    {{ form.errors }}
+{% endif %}
+
+<a href="/consulta">Ir para consulta</a>
+
+</body>
+</html>
